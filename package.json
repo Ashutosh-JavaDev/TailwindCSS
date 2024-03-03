@@ -1,0 +1,23 @@
+{
+  "name": "tailwindcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashutosh-JavaDev/TailwindCSS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashutosh-JavaDev/TailwindCSS/issues"
+  },
+  "homepage": "https://github.com/Ashutosh-JavaDev/TailwindCSS#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
