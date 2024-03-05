@@ -544,14 +544,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.fixed {
-  position: fixed;
-}
-
-.z-50 {
-  z-index: 50;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -621,8 +613,8 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.to-sky-300 {
-  --tw-gradient-to: #7dd3fc var(--tw-gradient-to-position);
+.to-sky-200 {
+  --tw-gradient-to: #bae6fd var(--tw-gradient-to-position);
 }
 
 .fill-current {
