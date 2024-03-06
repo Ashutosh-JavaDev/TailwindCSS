@@ -11,7 +11,7 @@
   <style>
     .mobile-menu {
       display: none;
-      transition: display 0.3s ease-in-out; /* Smooth transition */
+      transition: display 0.3s ease;
     }
     @media (max-width: 768px) {
       .mobile-menu {
@@ -26,24 +26,23 @@
     }
   </style>
 </head>
-<body">
- <div class="bg-gradient-to-t from-blue-50 to-sky-200 h-screen">
-  <nav>
+<body>
+  <nav class="bg-gray-800">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex justify-between h-16">
         <div class="flex">
           <div class="flex-shrink-0 flex items-center">
-            <h1 class="text-black font-bold">Stero</h1>
+            <h1 class="text-white">Stero</h1>
           </div>
         </div>
         <div class="hidden md:flex md:items-center md:space-x-4 desktop-menu">
-          <a href="#" class="text-gray-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-          <a href="#" class="text-gray-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Features</a>
-          <a href="#" class="text-gray-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Details</a>
-          <a href="#" class="text-gray-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
-          <a href="#" class="text-gray-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Download</a>
-          <a href="#" class="text-blue-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"><i class="fa-brands fa-apple"></i></a>
-          <a href="#" class="text-blue-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"><i class="fa-brands fa-android"></i></a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Features</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Details</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Download</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"><i class="fa-brands fa-apple"></i></a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"><i class="fa-brands fa-android"></i></a>
         </div>
         <div class="md:hidden mobile-menu-toggle">
           <!-- Mobile menu button -->
@@ -58,34 +57,16 @@
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="md:hidden mobile-menu">
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-        <a href="#" class="text-gray-900 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-        <a href="#" class="text-gray-900 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Features</a>
-        <a href="#" class="text-gray-900 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Details</a>
-        <a href="#" class="text-gray-900 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Pricing</a>
-        <a href="#" class="text-gray-900 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Download</a>
-        <a href="#" class="text-gray-900 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"><i class="fa-brands fa-apple"></i></a>
-        <a href="#" class="text-gray-900 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"><i class="fa-brands fa-android"></i></a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Features</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Details</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Pricing</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Download</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"><i class="fa-brands fa-apple"></i></a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"><i class="fa-brands fa-android"></i></a>
       </div>
     </div>
   </nav>
-  <main class="grid col-span-2 gap-3 border border-red-800">
-   <div >
-    <div><h1>Team management mobile application</h1>
-      <p>Start getting things done together with your team based on Pavo's revolutionary team management features</p>
-    <button>
-      <a href="#" class="text-gray-900 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"><i class="fa-brands fa-apple"></i></a>
-      <h3>Download</h3>
-    </button><button>
-      <a href="#" class="text-gray-900 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"><i class="fa-brands fa-android"></i></a>
-      <p>Download</p>
-    </button>
-    </div>
-      <div>
-        <img src="Images/header-smartphone.png" alt="Advertisment">
-      </div>
-   </div>
-  </main>
- </div>
   <script>
     function toggleMobileMenu() {
       var mobileMenu = document.querySelector('.mobile-menu');
