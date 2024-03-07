@@ -561,10 +561,6 @@ video {
   display: flex;
 }
 
-.grid {
-  display: grid;
-}
-
 .hidden {
   display: none;
 }
@@ -575,6 +571,11 @@ video {
 
 .h-6 {
   height: 1.5rem;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .h-screen {
@@ -613,8 +614,8 @@ video {
   justify-content: center;
 }
 
-.justify-between {
-  justify-content: space-between;
+.justify-around {
+  justify-content: space-around;
 }
 
 .justify-evenly {
@@ -651,14 +652,9 @@ video {
   border-width: 1px;
 }
 
-.border-blue-800 {
+.border-blue-600 {
   --tw-border-opacity: 1;
-  border-color: rgb(30 64 175 / var(--tw-border-opacity));
-}
-
-.border-gray-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+  border-color: rgb(37 99 235 / var(--tw-border-opacity));
 }
 
 .border-green-500 {
@@ -681,9 +677,9 @@ video {
   border-color: rgb(69 10 10 / var(--tw-border-opacity));
 }
 
-.bg-blue-800 {
+.bg-blue-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .bg-pink-500 {
@@ -731,9 +727,19 @@ video {
   padding-right: 0.75rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-2 {
@@ -768,6 +774,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-base {
@@ -853,6 +864,11 @@ video {
   background-color: transparent;
 }
 
+.hover\:text-blue-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
 .hover\:text-blue-800:hover {
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
@@ -884,8 +900,8 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:flex {
-    display: flex;
+  .sm\:h-screen {
+    height: 100vh;
   }
 
   .sm\:w-fit {
@@ -895,6 +911,10 @@ video {
 
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:justify-normal {
+    justify-content: normal;
   }
 
   .sm\:justify-center {
