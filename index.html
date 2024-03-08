@@ -18,7 +18,7 @@
 
     <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
     <style>
-      .mobile-menu {
+       .mobile-menu {
         display: none; /* Set initial display to none */
         transition: display 0.3s ease;
       }
@@ -433,11 +433,11 @@
       <!-- end of statistics -->
 
       <!-- What People Think -->
-      <div>
-        <div>
-          <div><p>What Users Think About Stero</p></div>
+      <div class="border border-red-600">
+        <div class=" border border-blue-700 flex flex-col justify-center items-center">
+          <div class="border border-green-700"><p>What Users Think About Stero</p></div>
           <!-- Cards -->
-          <div>
+          <div class="grid grid-cols-3">
             <div><img src="Images/testimonial-1.jpg" alt="Images"><p>It's been so fun to work with Pavo, I've managed to integrate it properly into my business flow and it's great</p><h2></h2></div>
             <div><img src="Images/testimonial-2.jpg" alt="Images"><p>We were so focused on launching as many campaigns as possible that we've forgotten to target our loyal customers</p><h2></h2></div>
             <div><img src="Images/testimonial-3.jpg" alt="Images"><p> like Pavo for so long. I love the reports it generates and the amazing high accuracy</p><h2></h2></div>
@@ -509,5 +509,20 @@
         }
       }
     </script>
+    <script>
+      // Automatically scroll the testimonials horizontally
+      function scrollTestimonials() {
+          const testimonialsContainer = document.querySelector('.grid');
+          testimonialsContainer.scrollLeft += 1; // Change scroll speed by adjusting the value
+  
+          // Reset scroll position when it reaches the end
+          if (testimonialsContainer.scrollLeft >= (testimonialsContainer.scrollWidth - testimonialsContainer.clientWidth)) {
+              testimonialsContainer.scrollLeft = 0;
+          }
+      }
+  
+      // Interval for scrolling
+      setInterval(scrollTestimonials, 50); // Adjust scroll speed by adjusting the interval time
+  </script>
   </body>
 </html>
