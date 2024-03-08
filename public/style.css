@@ -602,6 +602,11 @@ video {
   width: 1.5rem;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -987,6 +992,10 @@ video {
   .md\:h-fit {
     height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .md\:h-screen {
+    height: 100vh;
   }
 
   .md\:w-4\/6 {
