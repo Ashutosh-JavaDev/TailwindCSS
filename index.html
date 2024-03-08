@@ -18,7 +18,7 @@
 
     <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
     <style>
-       .mobile-menu {
+      .mobile-menu {
         display: none; /* Set initial display to none */
         transition: display 0.3s ease;
       }
@@ -433,17 +433,17 @@
       <!-- end of statistics -->
 
       <!-- What People Think -->
-      <div class="border border-red-600">
-        <div class=" border border-blue-700 flex flex-col justify-center items-center">
-          <div class="border border-green-700"><p>What Users Think About Stero</p></div>
+      <div class="border border-red-600 p-5 bg-gradient-to-t from-sky-300 to-sky-50">
+        <div class=" border border-blue-700 w-fit p-5 flex flex-col gap-5 justify-center items-center">
+          <div class="border border-green-700 p-5"><p class="font-josefin-sans tracking-wider font-bold text-4xl">What Users Think About Stero</p></div>
           <!-- Cards -->
-          <div class="grid grid-cols-3">
-            <div><img src="Images/testimonial-1.jpg" alt="Images"><p>It's been so fun to work with Pavo, I've managed to integrate it properly into my business flow and it's great</p><h2></h2></div>
-            <div><img src="Images/testimonial-2.jpg" alt="Images"><p>We were so focused on launching as many campaigns as possible that we've forgotten to target our loyal customers</p><h2></h2></div>
-            <div><img src="Images/testimonial-3.jpg" alt="Images"><p> like Pavo for so long. I love the reports it generates and the amazing high accuracy</p><h2></h2></div>
-            <div><img src="Images/testimonial-4.jpg" alt="Images"><p>We've been waiting for a powerful piece of software that can help businesses manage their marketing projects</p><h2></h2></div>
-            <div><img src="Images/testimonial-5.jpg" alt="Images"><p>Searching for a great prototyping and layout design app was difficult but thankfully I found app suite quickly</p><h2></h2></div>
-            <div><img src="Images/testimonial-6.jpg" alt="Images"><p>The app support team is amazing. They've helped me with some issues and I am so grateful to the entire team</p><h2></h2></div>
+          <div class="grid  lg:grid-cols-2 xl:grid-cols-3 m-0 items-center gap-3 p-4 justify-center md:m-5 border border-black">
+            <div class="flex flex-col w-full sm:m-auto h-max shadow-xl p-5 justify-center bg-white rounded-2xl hover:bg-black hover:cursor-pointer duration-300 hover:text-white items-center sm:w-1/2 gap-3"><img class="w-20 rounded-full" src="Images/testimonial-1.jpg" alt="Images"><p class="font-josefin-sans hover:text-white text-gray-600 leading-8">It's been so fun to work with Pavo, I've managed to integrate it properly into my business flow and it's great</p>           <h2 class="font-lexend font-bold text-xl">Jude Thorn - Designer</h2></div>
+            <div class="flex flex-col w-full sm:m-auto h-max shadow-xl p-5 justify-center bg-white rounded-2xl hover:bg-black hover:cursor-pointer duration-300 hover:text-white items-center sm:w-1/2 gap-3"><img class="w-20 rounded-full" src="Images/testimonial-2.jpg" alt="Images"><p class="font-josefin-sans hover:text-white text-gray-600 leading-8">We were so focused on launching as many campaigns as possible that we've forgotten to target our loyal customers</p>         <h2 class="font-lexend font-bold text-xl">Roy Smith - Developer</h2></div>
+            <div class="flex flex-col w-full sm:m-auto h-max shadow-xl p-5 justify-center bg-white rounded-2xl hover:bg-black hover:cursor-pointer duration-300 hover:text-white items-center sm:w-1/2 gap-3"><img class="w-20 rounded-full" src="Images/testimonial-3.jpg" alt="Images"><p class="font-josefin-sans hover:text-white text-gray-600 leading-8">I like Pavo for so long. I love the reports it generates and the amazing high accuracy, and the performance is also well.</p><h2 class="font-lexend font-bold text-xl">Tim Shaw - Designer</h2></div>
+            <div class="flex flex-col w-full sm:m-auto h-max shadow-xl p-5 justify-center bg-white rounded-2xl hover:bg-black hover:cursor-pointer duration-300 hover:text-white items-center sm:w-1/2 gap-3"><img class="w-20 rounded-full" src="Images/testimonial-4.jpg" alt="Images"><p class="font-josefin-sans hover:text-white text-gray-600 leading-8">We've been waiting for a powerful piece of software that can help businesses manage their marketing projects</p>             <h2 class="font-lexend font-bold text-xl">Marsha Singer - Marketer</h2></div>
+            <div class="flex flex-col w-full sm:m-auto h-max shadow-xl p-5 justify-center bg-white rounded-2xl hover:bg-black hover:cursor-pointer duration-300 hover:text-white items-center sm:w-1/2 gap-3"><img class="w-20 rounded-full" src="Images/testimonial-5.jpg" alt="Images"><p class="font-josefin-sans hover:text-white text-gray-600 leading-8">Searching for a great prototyping and layout design app was difficult but thankfully I found app suite quickly</p>           <h2 class="font-lexend font-bold text-xl">Lindsay Spice - Marketer</h2></div>
+            <div class="flex flex-col w-full sm:m-auto h-max shadow-xl p-5 justify-center bg-white rounded-2xl hover:bg-black hover:cursor-pointer duration-300 hover:text-white items-center sm:w-1/2 gap-3"><img class="w-20 rounded-full" src="Images/testimonial-6.jpg" alt="Images"><p class="font-josefin-sans hover:text-white text-gray-600 leading-8">The app support team is amazing. They've helped me with some issues and I am so grateful to the entire team</p>              <h2 class="font-lexend font-bold text-xl">Ann Blake - Developer</h2></div>
           </div>
         </div>
       </div>
@@ -509,20 +509,5 @@
         }
       }
     </script>
-    <script>
-      // Automatically scroll the testimonials horizontally
-      function scrollTestimonials() {
-          const testimonialsContainer = document.querySelector('.grid');
-          testimonialsContainer.scrollLeft += 1; // Change scroll speed by adjusting the value
-  
-          // Reset scroll position when it reaches the end
-          if (testimonialsContainer.scrollLeft >= (testimonialsContainer.scrollWidth - testimonialsContainer.clientWidth)) {
-              testimonialsContainer.scrollLeft = 0;
-          }
-      }
-  
-      // Interval for scrolling
-      setInterval(scrollTestimonials, 50); // Adjust scroll speed by adjusting the interval time
-  </script>
   </body>
 </html>
