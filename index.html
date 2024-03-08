@@ -251,8 +251,88 @@
       <img class="inline" src="Images/details-3.jpg" alt="Immages2">
     </div>
   </div>
+<!-- Coubt -->
+ <!-- Statistics -->
+        <div class="counter">
+            <div class="container px-4 sm:px-8">
+                
+                <!-- Counter -->
+                <div id="counter">
+                    <div class="cell">
+                        <div class="counter-value number-count" data-count="231">1</div>
+                        <p class="counter-info">Happy Users</p>
+                    </div>
+                    <div class="cell">
+                        <div class="counter-value number-count" data-count="385">1</div>
+                        <p class="counter-info">Issues Solved</p>
+                    </div>
+                    <div class="cell">
+                        <div class="counter-value number-count" data-count="159">1</div>
+                        <p class="counter-info">Good Reviews</p>
+                    </div>
+                    <div class="cell">
+                        <div class="counter-value number-count" data-count="127">1</div>
+                        <p class="counter-info">Case Studies</p>
+                    </div>
+                    <div class="cell">
+                        <div class="counter-value number-count" data-count="211">1</div>
+                        <p class="counter-info">Orders Received</p>
+                    </div>
+                </div>
+                <!-- end of counter -->
 
+            </div> <!-- end of container -->
+        </div> <!-- end of counter -->
+        <!-- end of statistics -->
   </div>
+
+  <!-- Code -->
+  <script>
+    function startCounting() {
+        let counters = document.querySelectorAll('.number-count');
+        let speed = 200; // adjust this value to control the speed of counting
+
+        counters.forEach(counter => {
+            let updateCount = () => {
+                let target = +counter.getAttribute('data-count');
+                let count = +counter.innerText;
+                let increment = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(updateCount, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCount();
+        });
+    }
+
+    // Start counting when the element is visible on the screen
+    function startCountingWhenVisible() {
+        let counterSection = document.querySelector('.counter');
+        let options = {
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        let observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    startCounting();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        observer.observe(counterSection);
+    }
+
+    // Call the function to start counting when the section is visible
+    startCountingWhenVisible();
+</script>
+
     <script>
       function toggleMobileMenu() {
         var mobileMenu = document.querySelector(".mobile-menu");
